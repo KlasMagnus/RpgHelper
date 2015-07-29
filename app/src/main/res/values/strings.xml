@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RpgHelper</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="counter">0</string>
+</resources>
