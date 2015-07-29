@@ -3,5 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="counter">0</string>
+    <string name="counterSTY">0</string>
+    <string name="counterKYL">0</string>
+    <string name="counterSKP">0</string>
+    <string name="counterKNS">0</string>
 </resources>

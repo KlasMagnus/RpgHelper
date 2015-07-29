@@ -3,7 +3,28 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FightActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FightActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Greglas"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/plusButton"
+        android:layout_toEndOf="@+id/plusButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="STY    KYL    SKP   KNS"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -12,17 +33,86 @@
         android:text=""
         android:id="@+id/plusButton"
         android:background="@drawable/plus_button"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/plusButton2"
+        android:background="@drawable/plus_button"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/plusButton" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/plusButton3"
+        android:background="@drawable/plus_button"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/plusButton2" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/plusButton4"
+        android:background="@drawable/plus_button"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/plusButton3" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/counter"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/counterSTY"
         android:id="@+id/counterTextView"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/plusButton"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/plusButton"
+        android:layout_alignEnd="@+id/plusButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/counterKYL"
+        android:id="@+id/counterTextView2"
+        android:layout_below="@+id/plusButton2"
+        android:layout_toRightOf="@+id/counterTextView"
+        android:layout_alignRight="@+id/plusButton2"
+        android:layout_alignEnd="@+id/plusButton2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/counterSKP"
+        android:id="@+id/counterTextView3"
+        android:layout_below="@+id/plusButton2"
+        android:layout_toRightOf="@+id/counterTextView2"
+        android:layout_alignRight="@+id/plusButton3"
+        android:layout_alignEnd="@+id/plusButton3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/counterKNS"
+        android:id="@+id/counterTextView4"
+        android:layout_below="@+id/plusButton3"
+        android:layout_toRightOf="@+id/counterTextView3"
+        android:layout_alignRight="@+id/plusButton4"
+        android:layout_alignEnd="@+id/plusButton4" />
+
+
+
 
 </RelativeLayout>
