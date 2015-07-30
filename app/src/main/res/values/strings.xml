@@ -7,4 +7,8 @@
     <string name="counterKYL">0</string>
     <string name="counterSKP">0</string>
     <string name="counterKNS">0</string>
+    <string name="STY">STY</string>
+    <string name="KYL">KYL</string>
+    <string name="SKP">SKP</string>
+    <string name="KNS">KNS</string>
 </resources>

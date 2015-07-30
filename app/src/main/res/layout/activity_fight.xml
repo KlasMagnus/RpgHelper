@@ -6,113 +6,502 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FightActivity"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Greglas"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/plusButton"
-        android:layout_toEndOf="@+id/plusButton" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="STY    KYL    SKP   KNS"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/plusButton"
-        android:background="@drawable/plus_button"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout10"
+            android:background="@drawable/ram">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/plusButton2"
-        android:background="@drawable/plus_button"
-        android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/plusButton" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Volmer"
+                android:id="@+id/textView9"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button7"
+                android:layout_toEndOf="@+id/button7"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="14dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/plusButton3"
-        android:background="@drawable/plus_button"
-        android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/plusButton2" />
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/plusButton4"
-        android:background="@drawable/plus_button"
-        android:layout_below="@+id/textView2"
-        android:layout_toRightOf="@+id/plusButton3" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/STY"
+                        android:id="@+id/textView10"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button7"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView10"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterSTY"
+                        android:id="@+id/textView11"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button7"
+                        android:layout_alignEnd="@+id/button7" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button8"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView10"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/KYL"
+                        android:id="@+id/textView12"
+                        android:layout_below="@+id/textView9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button9"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView12"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterKYL"
+                        android:id="@+id/textView13"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button9"
+                        android:layout_alignEnd="@+id/button9" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button10"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView12"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/SKP"
+                        android:id="@+id/textView14"
+                        android:layout_below="@+id/textView9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button11"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView14"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterSKP"
+                        android:id="@+id/textView15"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button11"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button11"
+                        android:layout_alignEnd="@+id/button11" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button12"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView14"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/KNS"
+                        android:id="@+id/textView16"
+                        android:layout_below="@+id/textView9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button13"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView16"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterKNS"
+                        android:id="@+id/textView17"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button13"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button13"
+                        android:layout_alignEnd="@+id/button13" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button14"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView16"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:background="@drawable/ram">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Greglas"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/plusButton"
+                android:layout_toEndOf="@+id/plusButton"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="14dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/STY"
+                        android:id="@+id/textView2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/plusButton"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterSTY"
+                        android:id="@+id/counterTextView"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/plusButton"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/plusButton"
+                        android:layout_alignEnd="@+id/plusButton" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/minusButton"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/KYL"
+                        android:id="@+id/textView3"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterKYL"
+                        android:id="@+id/textView4"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button"
+                        android:layout_alignEnd="@+id/button" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button2"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/SKP"
+                        android:id="@+id/textView5"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button3"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/counterSTY"
-        android:id="@+id/counterTextView"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/plusButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/plusButton"
-        android:layout_alignEnd="@+id/plusButton" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterSKP"
+                        android:id="@+id/textView6"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button3"
+                        android:layout_alignEnd="@+id/button3" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/counterKYL"
-        android:id="@+id/counterTextView2"
-        android:layout_below="@+id/plusButton2"
-        android:layout_toRightOf="@+id/counterTextView"
-        android:layout_alignRight="@+id/plusButton2"
-        android:layout_alignEnd="@+id/plusButton2" />
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button4"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/counterSKP"
-        android:id="@+id/counterTextView3"
-        android:layout_below="@+id/plusButton2"
-        android:layout_toRightOf="@+id/counterTextView2"
-        android:layout_alignRight="@+id/plusButton3"
-        android:layout_alignEnd="@+id/plusButton3" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/counterKNS"
-        android:id="@+id/counterTextView4"
-        android:layout_below="@+id/plusButton3"
-        android:layout_toRightOf="@+id/counterTextView3"
-        android:layout_alignRight="@+id/plusButton4"
-        android:layout_alignEnd="@+id/plusButton4" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/KNS"
+                        android:id="@+id/textView7"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
 
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button5"
+                        android:background="@drawable/plus_button"
+                        android:layout_below="@+id/textView7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/counterKNS"
+                        android:id="@+id/textView8"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/button5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/button5"
+                        android:layout_alignEnd="@+id/button5" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="59dp"
+                        android:layout_height="63dp"
+                        android:text=""
+                        android:id="@+id/button6"
+                        android:background="@drawable/minus_button"
+                        android:layout_below="@+id/textView7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 </RelativeLayout>
